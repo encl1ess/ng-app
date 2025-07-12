@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Thumbnail } from '../../../../shared/ui/thumbnail/thumbnail';
 import { Title } from '../../../../shared/ui/title/title';
 import { Product } from '../../model/product.types';
@@ -9,6 +9,7 @@ import { AddToCartButton } from '../../../../features/add-to-cart-button/add-to-
   imports: [Thumbnail, Title, AddToCartButton],
   templateUrl: './product-card.html',
   styleUrl: './product-card.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductCard {
   product = input<Product>();

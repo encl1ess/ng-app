@@ -1,4 +1,4 @@
-import { Component, input, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -11,6 +11,7 @@ import { Component, input, Input } from '@angular/core';
     <ng-content></ng-content>
   </button>`,
   styleUrl: './button.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Button {
   isIcon = input<boolean>(false);

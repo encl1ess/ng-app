@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Thumbnail } from '../../../../shared/ui/thumbnail/thumbnail';
 import { Title } from '../../../../shared/ui/title/title';
 import { CartItem } from '../../model/cart.types';
@@ -8,6 +8,7 @@ import { CartItem } from '../../model/cart.types';
   imports: [Thumbnail, Title],
   templateUrl: './cart-card.html',
   styleUrl: './cart-card.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CartCard {
   item = input<CartItem>();
