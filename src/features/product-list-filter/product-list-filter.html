@@ -1,0 +1,10 @@
+<form [formGroup]="filterForm">
+  <select id="filter-select" class="filter-select" formControlName="category">
+    <option selected value="">Show all categories</option>
+    @for( category of categories$ | async; track category) {
+    <option [value]="category">
+      {{ category | titlecase }}
+    </option>
+    }
+  </select>
+</form>

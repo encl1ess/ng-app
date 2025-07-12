@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core';
   selector: 'app-thumbnail',
   imports: [],
   templateUrl: './thumbnail.html',
-  styleUrl: './thumbnail.scss'
+  styleUrl: './thumbnail.scss',
 })
 export class Thumbnail {
   src = input<string>();

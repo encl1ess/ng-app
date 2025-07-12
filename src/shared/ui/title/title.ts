@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-title',
   imports: [],
   template: `<p class="title"><ng-content></ng-content></p>`,
-  styleUrl: './title.scss'
+  styleUrl: './title.scss',
 })
-export class Title {
-
-}
+export class Title {}
