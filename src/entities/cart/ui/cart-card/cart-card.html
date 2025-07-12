@@ -1,0 +1,11 @@
+@if(item(); as item) {
+<div class="cart-card">
+  <app-thumbnail [src]="item.image" [alt]="item.title" />
+
+  <app-title class="cart-card__title">{{ item.title }}</app-title>
+
+  <span class="cart-card__price"
+    >Total price: <b>{{ item.total_price.toFixed(2) }}</b></span
+  >
+</div>
+}

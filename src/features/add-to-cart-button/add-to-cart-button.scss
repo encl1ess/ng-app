@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-end;
+  width: 110px;
+  text-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.quantity {
+  min-width: 20px;
+  text-align: center;
+}

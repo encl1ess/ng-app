@@ -1,0 +1,12 @@
+@if(cartItems().length > 0) {
+<ul class="cart-list">
+  @for(cartItem of cartItems(); track cartItem.id) {
+  <li>
+    <cart-card [item]="cartItem"></cart-card>
+  </li>
+  }
+</ul>
+<strong class="total-price">Total: {{ totalPrice.toFixed(2) }}</strong>
+} @else {
+<p class="cart-list__empty">Your cart is empty</p>
+}

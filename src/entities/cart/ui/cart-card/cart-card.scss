@@ -1,0 +1,18 @@
+.cart-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+}
+
+.cart-card__title {
+  max-width: 40%;
+}
+
+.cart-card__price {
+  text-align: right;
+  min-width: 80px;
+  margin-left: auto;
+}

@@ -1,0 +1,26 @@
+@if (quantity > 0) {
+<app-button (click)="onChangeQuantityClick(false)">-</app-button>
+<span class="quantity">{{ quantity }}</span>
+<app-button (click)="onChangeQuantityClick(true)">+</app-button>
+<app-button (click)="onRemoveFromCartClick()">
+  <!-- AI generated SVG -->
+  <svg
+    width="12"
+    height="12"
+    viewBox="0 0 12 12"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect x="3" y="5" width="1" height="4" fill="red" />
+    <rect x="5.5" y="5" width="1" height="4" fill="red" />
+    <rect x="8" y="5" width="1" height="4" fill="red" />
+    <path
+      d="M2 3H10M4 3V2.5C4 2.22 4.22 2 4.5 2H7.5C7.78 2 8 2.22 8 2.5V3M3 3V10C3 10.55 3.45 11 4 11H8C8.55 11 9 10.55 9 10V3"
+      stroke="red"
+      stroke-width="1"
+    />
+  </svg>
+</app-button>
+} @else {
+<app-button (click)="onAddToCardClick()">Add to cart</app-button>
+}
