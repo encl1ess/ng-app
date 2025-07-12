@@ -1,0 +1,19 @@
+@if(product(); as product) {
+<div class="product-card">
+  <app-thumbnail
+    class="product-card__thumbnail"
+    [src]="product.image"
+    [alt]="product.title"
+  />
+  <app-title class="product-card__title">{{ product.title }}</app-title>
+  <div class="product-card__info">
+    <span class="product-card__price"
+      >Price: <b>{{ product.price.toFixed(2) }}</b></span
+    >
+    <p class="product-card__rating">
+      Rating: <b>{{ product.rating.rate }} </b>
+      <span>({{ product.rating.count }} reviews)</span>
+    </p>
+  </div>
+</div>
+}

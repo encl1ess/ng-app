@@ -1,0 +1,8 @@
+.content {
+  flex: 1;
+  padding: 16px;
+  height: fit-content;
+  max-height: 100%;
+  overflow: auto;
+  scrollbar-gutter: stable;
+}
